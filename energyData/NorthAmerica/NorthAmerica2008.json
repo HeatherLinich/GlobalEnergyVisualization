@@ -1,0 +1,11 @@
+[
+  {"date":"2008", "country":"North America","type":"Natural Gas", "total":747.0, "color": "purple"},
+  {"date":"2008", "country":"North America","type":"Oil", "total":1068.2, "color": "blue"},
+  {"date":"2008", "country":"North America","type":"Coal", "total":607.2, "color": "yellow"},
+  {"date":"2008", "country":"North America","type":"Nuclear", "total":215.4, "color": "red"},
+  {"date":"2008", "country":"North America","type":"Hydroelectricity", "total":152.2, "color": "green"},
+  {"date":"2008", "country":"North America","type":"Renewables:other", "total":34.3, "color": "green"},
+  {"date":"2008", "country":"North America","type":"Solar", "total":0.2, "color": "green"},
+  {"date":"2008", "country":"North America","type":"Wind", "total":13.6, "color": "green"},
+  {"date":"2008", "country":"North America","type":"Geothermal", "total":20.5, "color": "green"}
+]

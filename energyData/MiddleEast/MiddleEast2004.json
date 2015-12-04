@@ -1,0 +1,11 @@
+[
+{"date":"2004", "country":"Middle East","type":"Natural Gas", "total":233.4, "color": "purple"},
+{"date":"2004", "country":"Middle East","type":"Oil", "total":279.5, "color": "blue"},
+{"date":"2004", "country":"Middle East","type":"Coal", "total":9.6, "color": "yellow"},
+{"date":"2004", "country":"Middle East","type":"Nuclear", "total":0, "color": "red"},
+{"date":"2004", "country":"Middle East","type":"Hydroelectricity", "total":4.0, "color": "green"},
+{"date":"2004", "country":"Middle East","type":"Renewables:other", "total":0, "color": "green"},
+{"date":"2004", "country":"Middle East","type":"Solar", "total":0, "color": "green"},
+{"date":"2004", "country":"Middle East","type":"Wind", "total":0, "color": "green"},
+{"date":"2004", "country":"Middle East","type":"Geothermal", "total":0, "color": "green"}
+]

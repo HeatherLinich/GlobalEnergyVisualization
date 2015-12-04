@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="d3.slider.css" />
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+  <script src="http://d3js.org/topojson.v0.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <title>Worldwide Energy Usage</title>
+</head>
+<body>
+	<div id="container">
+	    <p id="heading">Geography of Global Energy Usage</p>
+      <p class="text">Climate change is a crisis facing our planet and everyone on it.  Through uses of traditional, fossil
+        fuel based energy sources, excessive amounts of carbon dioxide have been released into the atmosphere over
+        the span of decades which is quickly beginning to unnaturally warm the planet.  Warming temperatures then
+        cause a multitude of problems such as severe weather, flooding and species extinction.  The following visualization
+        explores the regions of the world that have the most total energy usage, regardless of energy type.  </p>
+	    <div id="map"></div>
+
+<br>
+<p class="text">The type of energy used by any given nation or region is an extremely important consideration in the climate
+  change discussion.  Traditional energy sources such as oil and coal produce the most pollutants.  Throughout the years,
+  research has been dedicated to creating cleaner, renewable energy sources.  As the air warms with increased pollutants, the
+  ocean in turn also warms.  Warmer oceans mean increased moisture in the air which then causes increased severe weather systems.
+  Below, graphs display the breadown of different energy types used by each region as well as the ocean temperature.  The  slider
+  shows the changes in these elements over time.</p>
+<p id="oceanHeader">Energy breakdown by region</p>
+
+    <div id="donuts">
+			<div>
+				<div class='my-legend'>
+				<div class='legend-title'>Energy Types</div>
+				<div class='legend-scale'>
+				  <ul class='legend-labels'>
+				    <li><span style='background:purple;'></span>Natural Gas</li>
+				    <li><span style='background:blue;'></span>Oil</li>
+				    <li><span style='background:yellow;'></span>Coal</li>
+				    <li><span style='background:red;'></span>Nuclear</li>
+				    <li><span style='background:green;'></span>Renewables*</li>
+				  </ul>
+				</div>
+				<div class='legend-source'>Source: <a href="http://www.bp.com/en/global/corporate/energy-economics/energy-outlook-2035/outlook-in-brief.html">BP Statistical Review</a></div>
+				</div>
+			</div>
+			<div>
+				<div class="regionlabels">North America</div>
+				<div id="donut-NorthAmerica"></div>
+			</div>
+			<div>
+				<div class="regionlabels">South America</div>
+				<div id="donut-SCAmerica"></div>
+			</div>
+			<div>
+				<div class="regionlabels">Europe/Eurasia</div>
+				<div id="donut-Europe"></div>
+			</div>
+			<div>
+				<div class="regionlabels">Africa</div>
+				<div id="donut-Africa"></div>
+			</div>
+			<div>
+				<div class="regionlabels">Middle East</div>
+				<div id="donut-MiddleEast"></div>
+			</div>
+			<div>
+				<div class="regionlabels">Asia Pacific</div>
+				<div id="donut-AsiaPacific"></div>
+			</div>
+
+		</div>
+
+    <p id="oceanHeader">Ocean temperature (Celsius)**</p>
+
+    <div id="oceans">
+      <div id="PacificOcean" class="oceanDiv pacOcean"></div>
+ 	    <div id="AtlanticOcean" class="oceanDiv"></div>
+  		<div id="IndianOcean" class="oceanDiv"></div>
+    </div>
+
+    <br>
+		<div id="slider-div"></div>
+	</div>
+
+	<div id="disclaimer">
+      <p id="renewableText">*Due to the very small percentage of renewables relative to traditional energy forms,
+        'Renewable' energy sources include: Hydroelectricity, Solar, Geothermal, Wind and Other<br>**Data is not genuine.
+        Data was not available in comparable units for the entire time period needed.</p>
+  </div>
+
+	</div>
+	<script src="d3.slider.js"></script>
+	<script src="drawDonut.js"></script>
+  <script src="drawMap.js"></script>
+
+  <br><br>
+
+  <p class="text">Over recent years, many of the more developed regions of the world have made conscious choices to reduce
+    their energy consupmtion. Efforts have been made to make power sources more green and energy efficient.  Below is the
+    per region change in total energy used over a ten year time period.</p>
+  <p id="oceanHeader">Change in total energy usage from 2004-2014 (percentage)</p>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Region", "Value", { role: "style" } ],
+          ["Africa", 0.19, "red"],
+          ["Asia Pacific", 7.55, "red"],
+          ["Europe/Eurasia", -5.36, "green"],
+          ["Middle East", 1.39, "red"],
+          ["North America", -4.43, "green"],
+          ["South America", 0.66, "red"]
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+                         { calc: "stringify",
+                           sourceColumn: 1,
+                           type: "string",
+                           role: "annotation" },
+                         2]);
+
+        var options = {
+
+          width: 600,
+          height: 400,
+          legend: 'none',
+          bar: {groupWidth: "95%"},
+          backgroundColor: 'rgb(34, 34, 34)',
+          hAxis: {
+            textStyle:{color: 'rgb(170,170,170)'}
+              },
+          titleTextStyle: { color: 'rgb(170,170,170)',
+                            fontSize: 14,
+              },
+          vAxis: {
+              gridlines: {
+                  color: 'transparent'
+                },
+                textStyle:{color: 'rgb(34,34,34)'},
+                viewWindow:{
+                max:8,
+                min:-6
+              }
+          }
+
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+        chart.draw(view, options);
+    }
+    </script>
+  <div id="columnchart_values" style="width: 900px; height: 400px;"></div>
+
+</body>
+</html>

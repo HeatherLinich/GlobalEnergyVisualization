@@ -1,0 +1,11 @@
+[
+  {"date":"2006", "country":"Asia Pacific","type":"Natural Gas", "total":392.7, "color": "purple"},
+  {"date":"2006", "country":"Asia Pacific","type":"Oil", "total":1175.4, "color": "blue"},
+  {"date":"2006", "country":"Asia Pacific","type":"Coal", "total":2005.7, "color": "yellow"},
+  {"date":"2006", "country":"Asia Pacific","type":"Nuclear", "total":128.7, "color": "red"},
+  {"date":"2006", "country":"Asia Pacific","type":"Hydroelectricity", "total":181.7, "color": "green"},
+  {"date":"2006", "country":"Asia Pacific","type":"Renewables:other", "total":19.3, "color": "green"},
+  {"date":"2006", "country":"Asia Pacific","type":"Solar", "total":0.4, "color": "green"},
+  {"date":"2006", "country":"Asia Pacific","type":"Wind", "total":4.2, "color": "green"},
+  {"date":"2006", "country":"Asia Pacific","type":"Geothermal", "total":14.6, "color": "green"}
+]

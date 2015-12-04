@@ -1,0 +1,11 @@
+[
+    {"date":"2005", "country":"Africa","type":"Natural Gas", "total":77.0, "color": "purple"},
+    {"date":"2005", "country":"Africa","type":"Oil", "total":138.9, "color": "blue"},
+    {"date":"2005", "country":"Africa","type":"Coal", "total":89.0, "color": "yellow"},
+    {"date":"2005", "country":"Africa","type":"Nuclear", "total":2.7, "color": "red"},
+    {"date":"2005", "country":"Africa","type":"Hydroelectricity", "total":20.3, "color": "green"},
+    {"date":"2005", "country":"Africa","type":"Renewables:other", "total":0.7, "color": "green"},
+    {"date":"2005", "country":"Africa","type":"Solar", "total":0, "color": "green"},
+    {"date":"2005", "country":"Africa","type":"Wind", "total":0.2, "color": "green"},
+    {"date":"2005", "country":"Africa","type":"Geothermal", "total":0.6, "color": "green"}
+]

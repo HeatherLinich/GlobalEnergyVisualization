@@ -1,0 +1,11 @@
+[
+  {"date":"2012", "country":"Asia Pacific","type":"Natural Gas", "total":582.8, "color": "purple"},
+  {"date":"2012", "country":"Asia Pacific","type":"Oil", "total":1392.9, "color": "blue"},
+  {"date":"2012", "country":"Asia Pacific","type":"Coal", "total":2659.3, "color": "yellow"},
+  {"date":"2012", "country":"Asia Pacific","type":"Nuclear", "total":77.8, "color": "red"},
+  {"date":"2012", "country":"Asia Pacific","type":"Hydroelectricity", "total":290.0, "color": "green"},
+  {"date":"2012", "country":"Asia Pacific","type":"Renewables:other", "total":66.4, "color": "green"},
+  {"date":"2012", "country":"Asia Pacific","type":"Solar", "total":4.1, "color": "green"},
+  {"date":"2012", "country":"Asia Pacific","type":"Wind", "total":32.7, "color": "green"},
+  {"date":"2012", "country":"Asia Pacific","type":"Geothermal", "total":29.5, "color": "green"}
+]

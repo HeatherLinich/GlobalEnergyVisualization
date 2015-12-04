@@ -1,0 +1,12 @@
+    [
+       {"date":"2008", "country":"Europe and Eurasia","type":"Natural Gas", "total":1022.2, "color": "purple"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Oil", "total":956.7, "color": "blue"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Coal", "total":527.6, "color": "yellow"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Nuclear", "total":276.5, "color": "red"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Hydroelectricity", "total":182.5, "color": "green"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Renewables:other", "total":54.7, "color": "green"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Solar", "total":1.7, "color": "green"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Wind", "total":27.4, "color": "green"},
+    {"date":"2008", "country":"Europe and Eurasia","type":"Geothermal", "total":25.6, "color": "green"}
+
+    ]

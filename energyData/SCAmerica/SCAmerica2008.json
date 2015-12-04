@@ -1,0 +1,11 @@
+[
+  {"date":"2008", "country":"South and Central America","type":"Natural Gas", "total":129.3, "color": "purple"},
+  {"date":"2008", "country":"South and Central America","type":"Oil", "total":274.3, "color": "blue"},
+  {"date":"2008", "country":"South and Central America","type":"Coal", "total":25.3, "color": "yellow"},
+  {"date":"2008", "country":"South and Central America","type":"Nuclear", "total":4.8, "color": "red"},
+  {"date":"2008", "country":"South and Central America","type":"Hydroelectricity", "total":154.0, "color": "green"},
+  {"date":"2008", "country":"South and Central America","type":"Renewables:other", "total":8.8, "color": "green"},
+  {"date":"2008", "country":"South and Central America","type":"Solar", "total":0, "color": "green"},
+  {"date":"2008", "country":"South and Central America","type":"Wind", "total":0.4, "color": "green"},
+  {"date":"2008", "country":"South and Central America","type":"Geothermal", "total":8.4, "color": "green"}
+]
